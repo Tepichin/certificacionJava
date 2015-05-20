@@ -1,3 +1,5 @@
+package modulo1;
+
 /**
  * Created by pablomoreno on 20/05/15.
  */
