@@ -9,16 +9,16 @@ package modulo2;/*
  * @author pablomoreno
  */
 public class Employee {
-    public int id;
-    public String firstName;
-    public String lastName;
-    public int age;
-    public String email;
-    public String phoneNumber;
-    public double salary;
-    public String job;
-    public String hireDate;
-    public String department;
+    private int id;
+    private String firstName;
+    private String lastName;
+    private int age;
+    private String email;
+    private String phoneNumber;
+    private double salary;
+    private String job;
+    private String hireDate;
+    private String department;
 
     public int getId() {
         return id;
@@ -36,6 +36,7 @@ public class Employee {
         this.firstName = firstName;
     }
 
+
     public String getLastName() {
         return lastName;
     }
@@ -44,13 +45,18 @@ public class Employee {
         this.lastName = lastName;
     }
 
+
     public int getAge() {
         return age;
     }
 
     public void setAge(int age) {
-        this.age = age;
+        if(age>=18 && age<=65)
+            this.age = age;
+        else
+            System.out.println("Edad incorrecta, debe ser entre 18 y 65 años");
     }
+
 
     public String getEmail() {
         return email;
@@ -60,6 +66,7 @@ public class Employee {
         this.email = email;
     }
 
+
     public String getPhoneNumber() {
         return phoneNumber;
     }
@@ -67,6 +74,7 @@ public class Employee {
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
+
 
     public double getSalary() {
         return salary;
@@ -76,6 +84,7 @@ public class Employee {
         this.salary = salary;
     }
 
+
     public String getJob() {
         return job;
     }
@@ -83,6 +92,7 @@ public class Employee {
     public void setJob(String job) {
         this.job = job;
     }
+
 
     public String getHireDate() {
         return hireDate;
@@ -92,6 +102,7 @@ public class Employee {
         this.hireDate = hireDate;
     }
 
+
     public String getDepartment() {
         return department;
     }
@@ -100,4 +111,3 @@ public class Employee {
         this.department = department;
     }
 }
-

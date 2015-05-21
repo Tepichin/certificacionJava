@@ -14,6 +14,20 @@ public class TestEmployee {
         Employee e3 = new Employee();
         Employee e7 = new Employee();
 
+        e1.setAge(25);
+        e3.setAge(13);
+        e7.setAge(29);
+
+        e1.setFirstName("Jennifer");
+        e3.setFirstName("Karen");
+        e7.setFirstName("Sussan");
+
+
+        System.out.println(e1.getFirstName()+", Age: "+e1.getAge());
+        System.out.println(e3.getFirstName()+", Age: "+e3.getAge());
+        System.out.println(e7.getFirstName()+", Age: "+e7.getAge());
+
+
         /*modulo2.Employee e1 = new modulo2.Employee("Jennifer", "Whalen", "JWHALEN", "515.123.4444", "2003/9/17", "Administration Manager", "Administration");
         modulo2.Employee e2 = new modulo2.Employee("Karen", "Colmenares", "KCOLMENA", "515.127.4566", "2007/8/10)", "Administration Assistant", "Administration");
         modulo2.Employee e3 = new modulo2.Employee("Michael", "Hartstein", "MHARTSTE", "515.123.5555", "2004, 2, 17", "Marketing Manager", "Marketing");
@@ -26,3 +40,4 @@ public class TestEmployee {
         */
     }
 }
+
