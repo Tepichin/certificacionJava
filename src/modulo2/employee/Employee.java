@@ -1,4 +1,4 @@
-package modulo2;/*
+package modulo2.employee;/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -19,6 +19,16 @@ public class Employee {
     private String job;
     private String hireDate;
     private String department;
+
+
+    public Employee(String fn, String e, String ln, String pn, String hd, String j, String d) {
+        this.firstName = fn;
+        this.email = e;
+        this.phoneNumber = pn;
+        this.job = j;
+        this.hireDate = hd;
+        this.department = d;
+    }
 
     public int getId() {
         return id;
