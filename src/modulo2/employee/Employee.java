@@ -4,6 +4,8 @@ package modulo2.employee;/*
  * and open the template in the editor.
  */
 
+import java.util.Date;
+
 /**
  *
  * @author pablomoreno
@@ -17,11 +19,11 @@ public class Employee {
     private String phoneNumber;
     private double salary;
     private String job;
-    private String hireDate;
+    private Date hireDate;
     private String department;
 
 
-    public Employee(String fn, String e, String ln, String pn, String hd, String j, String d) {
+    public Employee(String fn, String e, String ln, String pn, Date hd, String j, String d) {
         this.firstName = fn;
         this.email = e;
         this.phoneNumber = pn;
@@ -104,11 +106,11 @@ public class Employee {
     }
 
 
-    public String getHireDate() {
+    public Date getHireDate() {
         return hireDate;
     }
 
-    public void setHireDate(String hireDate) {
+    public void setHireDate(Date hireDate) {
         this.hireDate = hireDate;
     }
 
