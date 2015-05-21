@@ -1,4 +1,4 @@
-package modulo3;
+package modulo3.primitives;
 
 /**
  * Created by pablomoreno on 21/05/15.
