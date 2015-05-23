@@ -21,14 +21,14 @@ public class Employee {
     private Date hireDate;
     private Department department;
 
-
-    public Employee(String fn, String e, String ln, String pn, Date hd, Job j, Department d) {
-        this.firstName = fn;
-        this.email = e;
-        this.phoneNumber = pn;
-        this.job = j;
-        this.hireDate = hd;
-        this.department = d;
+    public Employee(String firstName, String lastName, String email, String phoneNumber, Job job, Date hireDate, Department department) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+        this.job = job;
+        this.hireDate = hireDate;
+        this.department = department;
     }
 
 
