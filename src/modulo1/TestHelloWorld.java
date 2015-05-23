@@ -10,7 +10,6 @@ public class TestHelloWorld {
         hello.greet();
     }
 }
-
 class HelloWorld{
     public void greet(){
         System.out.println("Hello Word Java!!!!");

@@ -21,7 +21,7 @@ public class Employee {
     private Date hireDate;
     private Department department;
 
-    public Employee(String firstName, String lastName, String email, String phoneNumber, Job job, Date hireDate, Department department) {
+    public Employee(String firstName, String lastName, String email, String phoneNumber, Date hireDate , Job job , Department department) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
@@ -101,8 +101,15 @@ public class Employee {
     }
 
     public void setSalary(double salary) {
+        if(salary >this.job.getMaxSalary()){
+            this.salary = this.job.getMaxSalary();
+        }
+        else if (salary <this.job.getMinSalary()){
+            this.salary = this.job.getMinSalary();
+        }else {
+            this.salary = salary;
+        }
 
-        this.salary = salary;
     }
 
 

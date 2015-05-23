@@ -12,7 +12,8 @@ public class TestLoop {
 
     public static void main(String args[]) {
         int i = 0;
-        for (/*Valores de entrada*/;/*Condicion de terminacion */;/*Iteracion por ciclo*/) {
+        for (System.out.println("Argumento 1");/*Condicion de terminacion */;System.out.println("Argumento 3")) {
+            //for (/*Valores de entrada*/;/*Condicion de terminacion */;/*Iteracion por ciclo*/)
             System.out.println(i);
             if (i == 5) {
                 System.out.println("Termina");
