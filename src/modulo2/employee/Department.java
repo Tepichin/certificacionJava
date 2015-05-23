@@ -9,10 +9,12 @@ public class Department {
     private Location location;
 
     public String getName() {
+
         return name;
     }
 
     public void setName(String name) {
+
         this.name = name;
     }
 
@@ -21,14 +23,17 @@ public class Department {
     }
 
     public void setManager(Employee manager) {
+
         this.manager = manager;
     }
 
     public Location getLocation() {
+
         return location;
     }
 
     public void setLocation(Location location) {
+
         this.location = location;
     }
 }

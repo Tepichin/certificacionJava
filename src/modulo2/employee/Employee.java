@@ -7,7 +7,6 @@ package modulo2.employee;/*
 import java.util.Date;
 
 /**
- *
  * @author pablomoreno
  */
 public class Employee {
@@ -18,12 +17,12 @@ public class Employee {
     private String email;
     private String phoneNumber;
     private double salary;
-    private String job;
+    private Job job;
     private Date hireDate;
-    private String department;
+    private Department department;
 
 
-    public Employee(String fn, String e, String ln, String pn, Date hd, String j, String d) {
+    public Employee(String fn, String e, String ln, String pn, Date hd, Job j, Department d) {
         this.firstName = fn;
         this.email = e;
         this.phoneNumber = pn;
@@ -31,7 +30,6 @@ public class Employee {
         this.hireDate = hd;
         this.department = d;
     }
-
 
 
     public int getId() {
@@ -47,25 +45,29 @@ public class Employee {
     }
 
     public void setFirstName(String firstName) {
+
         this.firstName = firstName;
     }
 
 
     public String getLastName() {
+
         return lastName;
     }
 
     public void setLastName(String lastName) {
+
         this.lastName = lastName;
     }
 
 
     public int getAge() {
+
         return age;
     }
 
     public void setAge(int age) {
-        if(age>=18 && age<=65)
+        if (age >= 18 && age <= 65)
             this.age = age;
         else
             System.out.println("Edad incorrecta, debe ser entre 18 y 65 años");
@@ -73,15 +75,18 @@ public class Employee {
 
 
     public String getEmail() {
+
         return email;
     }
 
     public void setEmail(String email) {
+
         this.email = email;
     }
 
 
     public String getPhoneNumber() {
+
         return phoneNumber;
     }
 
@@ -91,19 +96,23 @@ public class Employee {
 
 
     public double getSalary() {
+
         return salary;
     }
 
     public void setSalary(double salary) {
+
         this.salary = salary;
     }
 
 
-    public String getJob() {
+    public Job getJob() {
+
         return job;
     }
 
-    public void setJob(String job) {
+    public void setJob(Job job) {
+
         this.job = job;
     }
 
@@ -113,15 +122,18 @@ public class Employee {
     }
 
     public void setHireDate(Date hireDate) {
+
         this.hireDate = hireDate;
     }
 
 
-    public String getDepartment() {
+    public Department getDepartment() {
+
         return department;
     }
 
-    public void setDepartment(String department) {
+    public void setDepartment(Department department) {
+
         this.department = department;
     }
 }
