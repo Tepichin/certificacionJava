@@ -7,9 +7,7 @@ class ScopeThingie {
      * en la diapositiva 7.
      */
     //Variable de instancia
-
     private int i = 1;
-
     public void firstMethod() {
         /*
          * Las variables locales deben
@@ -22,7 +20,6 @@ class ScopeThingie {
         this.i = i + j;
         secondMethod(7);
     }
-
     public void secondMethod(/*Variable Local*/int i) {
         //Variable local
         int j = 8;
@@ -30,14 +27,11 @@ class ScopeThingie {
         //int j;
         this.i = i + j;
     }
-
     public int getValue() {
         return i;
     }
 }
-
 public class ScopeExample {
-
     public static void main(String[] args) {
         ScopeThingie scope = new ScopeThingie();
         System.out.println("Original i = " + scope.getValue());

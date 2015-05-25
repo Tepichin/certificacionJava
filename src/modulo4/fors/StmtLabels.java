@@ -16,7 +16,6 @@ public class StmtLabels {
       System.out.println("after lab1");
     }
 
-
   System.out.println("before lab1a");       // test break label on if statement
   lab1a:
     if ( count == 0 ) {
