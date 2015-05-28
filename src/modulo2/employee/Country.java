@@ -3,11 +3,15 @@ package modulo2.employee;
 /**
  * Created by pablomoreno on 21/05/15.
  */
-public class Country {
+public  enum Country {
+    ARGENTINA("Argentina"),
+    AUSTRALIA("Australia");
+
     private String name;
 
 
-    public Country(String name) {
+    private Country(String name) {
+
         this.name = name;
     }
 
